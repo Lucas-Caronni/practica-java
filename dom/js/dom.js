@@ -29,11 +29,18 @@ if (edad > 17){
     accesoDenegado.style.display = "block";
 }
 // ej f
-let gustaProgramacion = confirm("¿Te gusta la programación?");
-let backgroundImg = document.querySelector('.background-img');
-if (gustaProgramacion) {
-    backgroundImg.style.backgroundImage = "url'dom/img/programmer.jpeg'"; 
-} else {
-    backgroundImg.style.backgroundImage = "url('dom/img/gatito.jpeg')";
-}
+document.addEventListener('DOMContentLoaded', function() {
+    let leGustaProgramacion = confirm("¿Te gusta la programación?");
+    let divBackgroundImg = document.querySelector('.background-img');
+    let img = document.createElement('img');
+    if (leGustaProgramacion) {
+        img.src = 'img/programmer.jpeg';
+    } else {
+        img.src = 'img/gatito.jpeg';
+    }
+    divBackgroundImg.appendChild(img);
+});
+
+// ej g
+
 

@@ -71,19 +71,7 @@ footer p{
 
 /*** VIEWPORTS ***/
 @media only screen and (max-width: 600px) {
-  li.menu{ display: none;}
-  main div.background-img{width: 100%;}
+    li.menu{ display: none;}
+    main div.background-img{width: 100%;}
 }
 /*** VIEWPORTS ***/
-
-.background-img {
-  width: 100%;
-  height: 100vh; /* Ajustar la altura del div al 100% del viewport */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0; /* Fondo de color claro para ver el div antes de cargar la imagen */
-}
-.background-img img {
-  max-width: 100%;
-  height: auto;}
