@@ -43,4 +43,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ej g
 
+document.addEventListener('DOMContentLoaded', function() {
+    let avatarImg = document.querySelector('.avatar');
+    let nuevaImagenUrl = prompt("Por favor, ingrese la URL de la nueva imagen:");
+    if (avatarImg && nuevaImagenUrl) {
+        avatarImg.src = nuevaImagenUrl;
+    }
+});
 
+// en caso que quisiera que solo se muestre la foto que se porporciona en el url, deberia cambiar la secuencia de los eventos. 
+
+// ej h ej i (juntos, van de la mano)
+
+let pelicula = {
+    nombre: "",
+    director: "",
+    duracion: 0,
+    actor: ""
+};
+
+pelicula.nombre = prompt("Ingrese el nombre de su película favorita:");
+pelicula.director = prompt("Ingrese el nombre del director de la película:");
+pelicula.duracion = Number(prompt("Ingrese la duración de la película en minutos:"));
+pelicula.actor = prompt("Ingrese el nombre del actor principal de la película:");
+
+console.log(`Información de la película favorita del usuario:\nNombre: ${pelicula.nombre}\nDirector: ${pelicula.director}\nDuración: ${pelicula.duracion} minutos\nActor Principal: ${pelicula.actor}`);
+
+// ej j
+
+document.getElementById("nombre").textContent = `Nombre: ${pelicula.nombre}`;
+document.getElementById("director").textContent = `Director: ${pelicula.director}`;
+document.getElementById("duracion").textContent = `Duración: ${pelicula.duracion} minutos`;
+document.getElementById("actor").textContent = `Actor Principal: ${pelicula.actor}`;
+
+// ej k
+document.querySelector("#pelicula ul").style.display = "block";
